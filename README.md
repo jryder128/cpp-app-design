@@ -1,6 +1,6 @@
 James Ryder (StudentID: 30108962)
 C++ Application Design
-No application plan yet
-No app description yet
-Completed modules: 1
+Module 01: Set Up GitHub & Your Development Environment
+  This program prints a message to the screen
+Completed modules: 01
 Instructions forthcoming
