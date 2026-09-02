@@ -3,4 +3,4 @@ C++ Application Design
 Module 02: Menus, Switch Case, and Application Flow
   This program simulates the main menu of a computer game.
 Completed modules: 01, 02
-Instructions: Compile hello-world.cpp in the IDE of your choosing and run the executable.
+Instructions: Compile MainMenue.cpp in the IDE of your choice and run the executable.
