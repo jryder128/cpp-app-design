@@ -1,22 +1,60 @@
 #include <iostream>
+#include <fstream>
+#include <sstream>
+#include <string>
+
 using namespace std;
 
 int main() {
-    int playerID[6] = {1, 2, 3, 4, 5, 6};
-    int age[6] = {24, 22, 25, 29, 22, 22};
-    string genre[6] = {"FPS", "FPS", "Royale", "FPS", "FPS", "MOBA"};
-    int energyDrinks[6] = {0, 2, 1, 0, 1, 1};
-    float screenBrightness[6] = {43.4, 88, 24.8, 80.2, 34.4, 22.1};
+    // Create and open a text file
+    ifstream file("esports_biometrics.csv");
+    if (file.is_open()) {
+        const int MAX_SIZE = 6; // max number of records, can be changed as needed
+        string line;
+        getline(file, line); // Skip the header of the .csv file
 
-    float *screenBrightnessPtr = &screenBrightness[2];
-    
-    cout << "=== E-SPORTS ATHLETE BIOMETRICS AND PERFORMANCE ===" << endl << endl;
+        cout << "========== || E-SPORTS ATHLETE BIOMETRICS AND PERFORMANCE || ==========" << endl << endl; // output header
 
-    for (int i = 0; i < 5; i++) {
-        cout << i + 1 << ". Player ID# PL_00000" << playerID[i] << " - " << "Age: " << age[i] << " | Genre: " << 
-            genre[i] << " | Energy Drinks: " << energyDrinks[i] << " | Screen Brightness: " << screenBrightness[i] << endl;
+        string players[MAX_SIZE];
+        string ages[MAX_SIZE];
+        string genres[MAX_SIZE];
+        string playTimes[MAX_SIZE];
+
+        for (int i = 0; i < MAX_SIZE; i++) {
+            getline(file, line); // Skip the header of the .csv file. Have to do this twice, for some reason...
+            stringstream ss(line);
+
+            // add player IDs to players[]
+            string player;
+            getline(ss, player, ',');
+            players[i] = player;
+
+            // add ages to ages[]
+            string age;
+            getline(ss, age, ',');
+            ages[i] = age;
+
+            // add genres to genres[]
+            string genre;
+            getline(ss, genre, ',');
+            genres[i] = genre;
+
+            // add Play Times to playTimes[]
+            string playTime;
+            getline(ss, playTime, ',');
+            playTimes[i] = playTime;
+
+            // create pointers for each of the 4 fields
+            string* Player = &players[i];
+            string* Age = &ages[i];
+            string* Genre = &genres[i];
+            string* PlayTime = &playTimes[i];
+            
+            // print data by de-referencing pointers
+            cout << i + 1 << ". Player ID# " << *Player << " - " << "Age: " << *Age << " | Genre: " <<
+                *Genre << " | Play Time: " << *PlayTime << endl;
+        }
     }
-
-    cout << "Third screen brightness setting through pointer: " << *screenBrightnessPtr << endl;
+    file.close();
     return 0;
 }
