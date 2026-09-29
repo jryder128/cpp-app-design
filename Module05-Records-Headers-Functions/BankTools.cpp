@@ -6,19 +6,19 @@
 int account = 0;
 float balance = 0.0;
 vector<int> accountList;
-vector<int> balanceList;
+vector<float> balanceList;
 
 void MainMenu() {
     float version = 0.1;
+    cout << "\n=== Welcome to Bank Teller Ver. " << version << " ===" << endl;
+
     int choice = 0;
     while (choice != 4) {
-        cout << "\n=== Welcome to Bank Teller Ver. " << version << " ===" << endl;
         cout << "\nPlease make a selection:" << endl;
         cout << "1. Add account" << endl;
         cout << "2. Delete account" << endl;
         cout << "3. Show accounts" << endl;
-        cout << "4. Withdraw from account" << endl;
-        cout << "5. Exit" << endl;
+        cout << "4. Exit" << endl;
 
         cin >> choice;
 
@@ -27,16 +27,18 @@ void MainMenu() {
             AddAccount();
             break;
         case 2:
+            cout << endl;
             DeleteAccount();
             break;
         case 3:
+            cout << endl;
             ShowAccounts();
             break;
         case 4:
-            cout << "Goodbye!" << endl;
+            cout << "\nGoodbye!" << endl;
             break;
         default:
-            cout << "Invalid option. Please select options 1 through 4." << endl;
+            cout << "\nInvalid option. Please select options 1 through 4." << endl;
         }
     }
 }
@@ -51,7 +53,7 @@ void AddAccount() {
         cin >> acctChoice;
         if (acctChoice == 'y' || acctChoice == 'Y') {
             accountList.push_back(account);
-            cout << "Account number " << account << " added." << endl;
+            cout << "\nAccount number " << account << " added." << endl;
             break;
         }
     }
@@ -60,12 +62,12 @@ void AddAccount() {
     while (balChoice == 'n' || balChoice == 'N') {
         cout << "Enter account balance: ";
         cin >> balance;
-        cout << "Account balance: " << balance << endl;
+        cout << "Account balance: $" << balance << endl;
         cout << "Is this correct? (Y/N) ";
         cin >> balChoice;
         if (balChoice == 'y' || balChoice == 'Y') {
             balanceList.push_back(balance);
-            cout << "Account balance $" << balance << " added." << endl;
+            cout << "\nAccount balance $" << balance << " added." << endl;
             break;
         }
     }
@@ -73,27 +75,32 @@ void AddAccount() {
 }
 
 void DeleteAccount() {
-    bool deleted = false;
-    int choice;
-    while (!deleted) {
-       for (int i = 0; i < accountList.size(); i++) {
-            cout << "Account " << i + 1 << ". " << accountList[i] << endl;
-        }
-        cout << "Which account would you like to delete? ";
-        cin >> choice;
-        if (choice < 1 || choice > accountList.size()) {
-            cout << "Invalid selection. Try again." << endl;
-            deleted = false;
-        }
-        else {
-            accountList.erase(accountList.begin() + choice - 1);
-            balanceList.erase(balanceList.begin() + choice - 1);
-            cout << "Account deleted." << endl;
-            deleted = true;
-        }
-       
+    if (accountList.size() == 0) {
+        cout << "No accounts to delete." << endl;
     }
+    else {
+        bool deleted = false;
+        int choice;
+        while (!deleted) {
+            for (int i = 0; i < accountList.size(); i++) {
+                cout << "Account " << i + 1 << ": " << accountList[i] << endl;
+            }
+            cout << "\nWhich account would you like to delete? ";
+            cin >> choice;
+            if (choice < 1 || choice > accountList.size()) {
+                cout << "\nInvalid selection. Try again." << endl;
+                deleted = false;
+            }
+            else {
+                accountList.erase(accountList.begin() + choice - 1);
+                balanceList.erase(balanceList.begin() + choice - 1);
+                cout << "\nAccount deleted." << endl;
+                deleted = true;
+            }
 
+        }
+
+    }
 }
 
 void ShowAccounts() {
@@ -101,8 +108,9 @@ void ShowAccounts() {
         cout << "No accounts to display." << endl;
     }
     else {
+        cout << "Currently active accounts:" << endl;
         for (int i = 0; i < accountList.size(); i++) {
-            cout << "Account " << i + 1 << ": " << accountList[i] << ", Balance: $" << balanceList[i] << endl;
+            cout << i + 1 << ". Account Number: " << accountList[i] << ", Balance: $" << balanceList[i] << endl;
         }
     }
 }
