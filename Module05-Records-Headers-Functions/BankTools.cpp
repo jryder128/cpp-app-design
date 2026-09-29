@@ -77,7 +77,7 @@ void DeleteAccount() {
     int choice;
     while (!deleted) {
        for (int i = 0; i < accountList.size(); i++) {
-            cout << "Account " << i + 1 << ". " << accountList[i] << ", Balance: $" << balanceList[i] << endl;
+            cout << "Account " << i + 1 << ". " << accountList[i] << endl;
         }
         cout << "Which account would you like to delete? ";
         cin >> choice;
