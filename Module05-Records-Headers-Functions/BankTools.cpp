@@ -71,7 +71,6 @@ void AddAccount() {
             break;
         }
     }
-
 }
 
 void DeleteAccount() {
@@ -97,9 +96,7 @@ void DeleteAccount() {
                 cout << "\nAccount deleted." << endl;
                 deleted = true;
             }
-
         }
-
     }
 }
 
