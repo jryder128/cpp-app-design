@@ -36,7 +36,7 @@ string anatomy(int part) {
         case 12: return " LARGE INTESTINE";
         case 13: return " AORTA";
         case 14: return " LEFT VENTRICLE";
-        case 15: return " BUTT";
+        case 15: return " RIGHT BUTTCHEEK";
         case 16: return " STERNUM";
         default: return "";
     }
