@@ -16,7 +16,7 @@ int rollHitPoints() {
 }
 
 // Create the list of combatants
-void createCombatants(combatant* fighters, int count, ostream& log) {
+void createCombatants(combatant* fighters, int count, ostream& text) {
     for (int i = 0; i < count; i++) {
         combatant& fighter = fighters[i];
         fighter.weapon = (rand() % 20) + 1;
@@ -28,7 +28,7 @@ void createCombatants(combatant* fighters, int count, ostream& log) {
         fighter.isDead = false;
         fighter.kills = 0;
 
-        log << i + 1 << ". " << fighter.name << " spawned with " << fighter.hitpoints
+        text << i + 1 << ". " << fighter.name << " spawned with " << fighter.hitpoints
             << " HP and " << fighter.strength << " strength. " << endl;
     }
 }
