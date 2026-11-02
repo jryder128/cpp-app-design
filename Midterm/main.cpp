@@ -16,12 +16,12 @@ int main() {
     int noc; // number of combatants
     cin >> noc;
 
-    ofstream log("battle.txt");
+    ofstream text("battle.txt");
 
     combatant* fighters = new combatant[noc]; // Pointer to an array of combatant classes
 
-    createCombatants(fighters, noc, log);
-    runBattle(fighters, noc, log);
+    createCombatants(fighters, noc, text);
+    runBattle(fighters, noc, text);
     searchCombatants(fighters, noc);
     delete[] fighters;
 }
