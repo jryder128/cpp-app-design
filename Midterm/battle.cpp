@@ -19,11 +19,12 @@ void runBattle(combatant* fighters, int count, ostream& text) {
         text << fighters[0].name << " is the last combatant standing!" << endl;
     }
 
+    // Each fighter attacks every other fighter in the list, one at a time
     while (survivors > 1) {
         for (int i = 0; i < turns; i++) {        // i represents attacker's turn
             for (int j = 0; j < noc; j++) {     // j represents targets
                 if (i != j && !fighters[i].isDead && !fighters[j].isDead) {
-                    int atkHits = rand() % 2;
+                    int atkHits = rand() % 2; 
                     if (atkHits != 1) {
                         text << round << ". " << fighters[i].name << " tried to attack "
                              << fighters[j].name << ", but they were distracted by a WRENCH!"
