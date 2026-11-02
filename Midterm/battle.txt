@@ -1,0 +1,85 @@
+1. EENY spawned with 101 HP and 20 strength. 
+2. MEENY spawned with 191 HP and 16 strength. 
+3. MINY spawned with 145 HP and 19 strength. 
+4. MOE spawned with 191 HP and 20 strength. 
+
+LET THE GAMES BEGIN!
+
+1. EENY mangled MEENY in the EYEBALL with a WRENCH!
+MEENY took 20 points of damage!
+MEENY's remaining HP: 171
+2. EENY tried to attack MINY, but they were distracted by a WRENCH!
+3. EENY tried to attack MOE, but they were distracted by a WRENCH!
+4. MEENY tried to attack EENY, but they were distracted by a WRENCH!
+5. MEENY cleaved MINY in the TRACHEA with a WRENCH!
+MINY took 16 points of damage!
+MINY's remaining HP: 129
+6. MEENY clobbered MOE in the LARGE INTESTINE with a WRENCH!
+MOE took 48 points of damage!
+MOE's remaining HP: 143
+7. MINY smashed EENY in the MEDULLA OBLONGATA with a WRENCH!
+EENY took 57 points of damage!
+EENY's remaining HP: 44
+8. MINY tried to attack MEENY, but they were distracted by a WRENCH!
+9. MINY tried to attack MOE, but they were distracted by a WRENCH!
+10. MOE tried to attack EENY, but they were distracted by a WRENCH!
+11. MOE impaled MEENY in the FEMORAL ARTERY with a WRENCH!
+MEENY took 20 points of damage!
+MEENY's remaining HP: 151
+12. MOE tried to attack MINY, but they were distracted by a WRENCH!
+13. EENY tried to attack MEENY, but they were distracted by a WRENCH!
+14. EENY tried to attack MINY, but they were distracted by a WRENCH!
+15. EENY tried to attack MOE, but they were distracted by a WRENCH!
+16. MEENY clobbered EENY in the FEMORAL ARTERY with a WRENCH!
+EENY took 128 points of damage!
+EENY's remaining HP: -84
+------< MEENY killed EENY! >------
+17. MEENY mangled MINY in the TRAPEZIUS with a WRENCH!
+MINY took 32 points of damage!
+MINY's remaining HP: 97
+18. MEENY tried to attack MOE, but they were distracted by a WRENCH!
+19. MINY tried to attack MEENY, but they were distracted by a WRENCH!
+20. MINY whacked MOE in the LIVER with a WRENCH!
+MOE took 19 points of damage!
+MOE's remaining HP: 124
+21. MOE mangled MEENY in the LUMBAR SPINE with a WRENCH!
+MEENY took 20 points of damage!
+MEENY's remaining HP: 131
+22. MOE tried to attack MINY, but they were distracted by a WRENCH!
+23. MEENY tried to attack MINY, but they were distracted by a WRENCH!
+24. MEENY tried to attack MOE, but they were distracted by a WRENCH!
+25. MINY tried to attack MEENY, but they were distracted by a WRENCH!
+26. MINY stabbed MOE in the TRAPEZIUS with a WRENCH!
+MOE took 19 points of damage!
+MOE's remaining HP: 105
+27. MOE tried to attack MEENY, but they were distracted by a WRENCH!
+28. MOE mauled MINY in the LEFT VENTRICLE with a WRENCH!
+MINY took 20 points of damage!
+MINY's remaining HP: 77
+29. MEENY clobbered MINY in the AORTA with a WRENCH!
+MINY took 16 points of damage!
+MINY's remaining HP: 61
+30. MEENY tried to attack MOE, but they were distracted by a WRENCH!
+31. MINY smacked MEENY in the LARGE INTESTINE with a WRENCH!
+MEENY took 95 points of damage!
+MEENY's remaining HP: 36
+32. MINY tried to attack MOE, but they were distracted by a WRENCH!
+33. MOE pelted MEENY in the AORTA with a WRENCH!
+MEENY took 60 points of damage!
+MEENY's remaining HP: -24
+------< MOE killed MEENY! >------
+34. MOE tried to attack MINY, but they were distracted by a WRENCH!
+35. MINY bludgeoned MOE in the PANCREAS with a WRENCH!
+MOE took 38 points of damage!
+MOE's remaining HP: 67
+36. MOE bludgeoned MINY in the CLAVICLE with a WRENCH!
+MINY took 100 points of damage!
+MINY's remaining HP: -39
+------< MOE killed MINY! >------
+MOE is the last combatant standing!
+
+   SCOREBOARD
+1. MOE: 2 kills (SURVIVOR!)
+2. MEENY: 1 kills
+3. EENY: 0 kills
+4. MINY: 0 kills
