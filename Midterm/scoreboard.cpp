@@ -17,13 +17,13 @@ void sortByKills(combatant* fighters, int count) {
     }
 }
 
-void printScoreboard(ostream& out, const combatant* fighters, int count) {
-    out << "   SCOREBOARD" << endl;
+void printScoreboard(ostream& text, const combatant* fighters, int count) {
+    text << "   SCOREBOARD" << endl;
     for (int i = 0; i < count; i++) {
-        out << i + 1 << ". " << fighters[i].name << ": " << fighters[i].kills << " kills";
+        text << i + 1 << ". " << fighters[i].name << ": " << fighters[i].kills << " kills";
         if (!fighters[i].isDead) {
-            out << " (SURVIVOR!)";
+            text << " (SURVIVOR!)";
         }
-        out << endl;
+        text << endl;
     }
 }
