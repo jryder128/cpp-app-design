@@ -7,6 +7,6 @@
 using namespace std;
 
 void sortByKills(combatant* fighters, int count);
-void printScoreboard(ostream& out, const combatant* fighters, int count);
+void printScoreboard(ostream& text, const combatant* fighters, int count);
 
 #endif
