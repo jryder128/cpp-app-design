@@ -9,6 +9,6 @@ using namespace std;
 
 string nameEntry(int i);
 int rollHitPoints();
-void createCombatants(combatant* fighters, int count, ostream& log);
+void createCombatants(combatant* fighters, int count, ostream& text);
 
 #endif
