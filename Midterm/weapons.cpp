@@ -4,26 +4,26 @@ using namespace std;
 
 string armory(int wep) {
     switch (wep) {
-        case 1:  return "a giant battle AXE";
+        case 1:  return "a giant BATTLE AXE";
         case 2:  return "a KATANA";
         case 3:  return "a FORK";
         case 4:  return "a comically large HAMMER";
         case 5:  return "a rubber DUCKY";
-        case 6:  return "a simple kitchen KNIFE";
+        case 6:  return "a simple KITCHEN KNIFE";
         case 7:  return "a spiked MACE";
         case 8:  return "a SPEAR";
         case 9:  return "a ZWEIHANDER";
-        case 10: return "a walrus's TOOTH";
+        case 10: return "a WALRUS TOOTH";
         case 11: return "a piece of BOLOGNA";
         case 12: return "a pink LIGHT SABER";
         case 13: return "the HOLY GRAIL";
         case 14: return "a CHAINSAW";
-        case 15: return "a live SQUID";
+        case 15: return "a LIVE SQUID";
         case 16: return "a GLADIUS";
-        case 17: return "a pair of polka-dotted UNDERWEAR ";
+        case 17: return "a pair of POLKA-DOTTED UNDERWEAR ";
         case 18: return "a BRICK";
-        case 19: return "a trash can LID";
-        case 20: return "a pointy STICK";
+        case 19: return "a TRASH CAN LID";
+        case 20: return "a POINTY STICK";
         default: return "nothing";
     }
 }
