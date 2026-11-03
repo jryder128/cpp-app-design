@@ -41,7 +41,7 @@ void runBattle(combatant* fighters, int count, ostream& text) {
 
                         text << round << ". " << fighters[i].name << verbs(verb)
                              << fighters[j].name << " in the" << anatomy(part)
-                             << " with a " << armory(wep) << endl
+                             << " with " << armory(wep) << endl
                              << fighters[j].name << " took " << attack << " points of damage!"
                              << endl;
 
