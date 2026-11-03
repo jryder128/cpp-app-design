@@ -17,4 +17,4 @@ This program includes or demonstrates all of the requirements for the midway pro
   - At least two classes
 However, even though this program includes multiple inherited classes, only the combatant class is currently functional. The functionality of the other classes will be implemented at a later date.
 
-Instructions: Compile the source files in the IDE of your choosing and run the executable.
+Instructions: Compile the source files in the IDE of your choice and run the executable.
