@@ -11,7 +11,7 @@ string verbs(int verb) {
         case 5:  return " smacked ";
         case 6:  return " mauled ";
         case 7:  return " cleaved ";
-        case 8:  return " smacked ";
+        case 8:  return " wolloped ";
         case 9:  return " clobbered ";
         case 10: return " stabbed ";
         case 11: return " impaled ";
