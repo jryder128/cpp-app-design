@@ -26,8 +26,7 @@ void runBattle(combatant* fighters, int count, ostream& text) {
                     int atkHits = rand() % 2;
                     if (atkHits != 1) {
                         text << round << ". " << fighters[i].name << " tried to attack "
-                             << fighters[j].name << ", but they were distracted by a FLYING PIG!"
-                             << '\n';
+                             << fighters[j].name << ", but they were distracted by a FLYING PIG!" << '\n';
                         round++;
                     }
                     else {
@@ -42,8 +41,7 @@ void runBattle(combatant* fighters, int count, ostream& text) {
                         text << round << ". " << fighters[i].name << verbs(verb)
                              << fighters[j].name << " in the" << anatomy(part)
                              << " with " << armory(wep) << '\n'
-                             << fighters[j].name << " took " << attack << " points of damage!"
-                             << '\n';
+                             << fighters[j].name << " took " << attack << " points of damage!" << '\n';
 
                         fighters[j].hitpoints -= attack;
                         text << fighters[j].name << "'s remaining HP: "
